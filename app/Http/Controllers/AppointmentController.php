@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Appointment;
-use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class AppointmentController extends Controller

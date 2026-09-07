@@ -11,17 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-	Schema::create('pets', function (Blueprint $table) {
-    		$table->id();
-    		$table->foreignId('user_id')->constrained()->cascadeOnDelete();
-    		$table->string('name');
-    		$table->string('species');
-    		$table->string('breed');
-    		$table->string('sex');
-    		$table->unsignedTinyInteger('age');
-    		$table->text('notes')->nullable();
-    		$table->timestamps();
-	});
+        Schema::create('pets', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->string('name');
+            $table->string('species');
+            $table->string('breed');
+            $table->string('sex');
+            $table->unsignedTinyInteger('age');
+            $table->text('notes')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**

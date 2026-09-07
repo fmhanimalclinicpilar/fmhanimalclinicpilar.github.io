@@ -29,13 +29,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-	public function pets()
-	{
-    		return $this->hasMany(Pet::class);
-	}
 
-	public function appointments()
-	{
-    		return $this->hasMany(Appointment::class);
-	}
+    public function pets()
+    {
+        return $this->hasMany(Pet::class);
+    }
+
+    public function appointments()
+    {
+        return $this->hasMany(Appointment::class);
+    }
 }
